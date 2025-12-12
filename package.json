@@ -1,0 +1,22 @@
+{
+  "name": "mcp-practice",
+  "version": "1.0.0",
+  "description": "Collection of MCP (Model Context Protocol) servers and tooling",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "mcp/*"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:mcp",
+    "install:mcp": "npm install --workspaces",
+    "setup:playwright": "cd mcp/playwright-browser && npm install && npx playwright install chromium"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "servers"
+  ],
+  "author": "",
+  "license": "MIT"
+}
